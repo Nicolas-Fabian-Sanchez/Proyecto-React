@@ -1,11 +1,12 @@
-export default function ListItemHome ({dato,otraData,info}){
+import {Link} from "react-router-dom";
+
+export default function ListItemHome ({dato,infoPath}){
   
-    const mostrar =()=>{
-        console.log(info)
-        alert(otraData)
-   }
+
 
     return(
-        <li onClick={mostrar}>{dato}</li>
+        <li  className="btn btn-success" >
+            <Link to={infoPath}>{dato}</Link>
+        </li>
     )
 } 
