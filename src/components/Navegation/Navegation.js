@@ -2,9 +2,9 @@ import {Link} from "react-router-dom";
 import './Navegation.css';
 export default function Navegation() {
     return(
-       <header>
+       <header className="bg-blue">
             <nav className="navbar navbar-expand-lg w-100 bg-blue">
-                <div className="conteiner-fluid">
+                <div className="container-fluid">
                     <a className="navbar-brand">Rick & Morty </a>
                     <ul className="navbar-nav nav-pills">
                         <li className="nav-item"> 

@@ -114,5 +114,17 @@ a{
 .colorW{
     color: whitesmoke !important;
 }
+@media(max-width:1300px){
+
+    .cards-section{
+		grid-template-columns:repeat(2,0.25fr);
+		justify-content: center;
+	}
+}
+@media(max-width:870px){
+	.cards-section{
+		grid-template-columns: repeat(1,0.5fr);
+	}
+}
 
 

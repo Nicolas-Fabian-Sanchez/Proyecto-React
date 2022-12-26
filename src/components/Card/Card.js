@@ -25,7 +25,7 @@ export default function Card({info}) {
             </div>
             {ocultar ==false?
                 <div>
-                    <button className="bg-warning" onClick={ocularInfo}>X</button>
+                    <button className="botones" onClick={ocularInfo}>X</button>
                     <ul className="list-group">
                         <li className="list-group-item">Character Status {info.status}</li>
                         <li className="list-group-item">Species {info.species}</li>

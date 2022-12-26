@@ -10,7 +10,7 @@ export default function Home() {
     return(
         
         <header className="principal-search cotainer-fluid d-flex flex-column justify-content-center align-items-center">
-            <div className="cotainer-header d-flex flex-column justify-content-center">
+            <div className="container-header d-flex flex-column justify-content-center">
                 <h1 className="row justify-content-center">Proyect - Rick & Morty</h1>
                 <nav className="row navbar align-items-center">
                     <ul className="nav nav-pills justify-content-center">
