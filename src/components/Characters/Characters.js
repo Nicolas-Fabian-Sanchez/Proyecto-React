@@ -59,16 +59,20 @@ export default function Characters() {
     return(
         <Fragment>
             <Navegation />
-            <section className='bg-success d-flex p-2'>
-                <h2>Filters</h2>
-                <Filters nombreFiltro="Character Alive" datoFiltro="Alive" muestraValor={mostrarValor}/> 
-                <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor}/> 
-                <Filters nombreFiltro="Female" datoFiltro="Female" muestraValor={mostrarValor}/> 
-                <Filters nombreFiltro="Male" datoFiltro="Male" muestraValor={mostrarValor}/> 
-                <Filters nombreFiltro="Origin Unknown" datoFiltro="unknown" muestraValor={mostrarValor}/> 
-            </section>
-                          
-            <SectionCards datos={datos} />
+            <main className='container'>
+                <section className='row section-filters py-5'>
+                    <h2 className='section-filters'>Filters</h2>
+                    <div className='filters d-flex justify-content-between flex-wrap'>
+                        <Filters nombreFiltro="Character Alive" datoFiltro="Alive" muestraValor={mostrarValor}/> 
+                        <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor}/> 
+                        <Filters nombreFiltro="Female" datoFiltro="Female" muestraValor={mostrarValor}/> 
+                        <Filters nombreFiltro="Male" datoFiltro="Male" muestraValor={mostrarValor}/> 
+                        <Filters nombreFiltro="Origin Unknown" datoFiltro="unknown" muestraValor={mostrarValor}/> 
+                    </div>
+                </section>
+                            
+                <SectionCards datos={datos} />
+            </main>
         </Fragment>
     )
 }

@@ -2,20 +2,22 @@ import {Link} from "react-router-dom";
 import './Navegation.css';
 export default function Navegation() {
     return(
-       <header className="d-flex bg-secondary">
-            <h1>Rick & Morty </h1>
-            <nav>
-                <ul className="d-flex">
-                    <li className="mx-2"> 
-                        <Link to="/">Home</Link>  
-                    </li>
-                    <li className="mx-2">
-                        <Link to="/characters">Characters</Link>
-                    </li>
-                    <li className="mx-2">
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
+       <header>
+            <nav className="navbar navbar-expand-lg w-100 bg-blue">
+                <div className="conteiner-fluid">
+                    <a className="navbar-brand">Rick & Morty </a>
+                    <ul className="navbar-nav nav-pills">
+                        <li className="nav-item"> 
+                            <Link to="/" className="nav-link boton" >Home</Link>  
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/characters" className="nav-link boton">Characters</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/contact"className="nav-link boton" >Contact</Link>
+                        </li>
+                    </ul>
+                </div>
             </nav>
        </header>
     )

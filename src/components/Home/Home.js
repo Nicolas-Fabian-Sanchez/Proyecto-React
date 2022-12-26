@@ -9,16 +9,18 @@ export default function Home() {
 
     return(
         
-        <header className="bg-primary">
-            <h1 >Proyect - Rick & Morty</h1>
-            <nav className="navbar">
-                <ul className="d-flex justify-content-between">
+        <header className="principal-search cotainer-fluid d-flex flex-column justify-content-center align-items-center">
+            <div className="cotainer-header d-flex flex-column justify-content-center">
+                <h1 className="row justify-content-center">Proyect - Rick & Morty</h1>
+                <nav className="row navbar align-items-center">
+                    <ul className="nav nav-pills justify-content-center">
 
-                    <ListItemHome dato="Characters" infoPath="/characters"/>
-                    <ListItemHome dato="Contact" infoPath="/contact"/>
-                    
-                </ul>
-            </nav>
+                        <ListItemHome dato="Characters" infoPath="/characters"/>
+                        <ListItemHome dato="Contact" infoPath="/contact"/>
+                        
+                    </ul>
+                </nav>
+            </div>
         </header>
     )
 }

@@ -1,6 +1,9 @@
-ul{
-    list-style-type: none;
-}
+
 header{
     padding: 20px;
+}
+h1, nav {
+    width: 600px;
+    padding: 40px!important;
+    color: #344D67;
 }

@@ -5,8 +5,8 @@ export default function ListItemHome ({dato,infoPath}){
 
 
     return(
-        <li  className="btn btn-success" >
-            <Link to={infoPath}>{dato}</Link>
+        <li  className="nav-item" >
+            <Link className="nav-link active m-2 p-3 botones" to={infoPath}>{dato}</Link>
         </li>
     )
 } 

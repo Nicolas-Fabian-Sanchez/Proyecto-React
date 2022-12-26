@@ -1,9 +1,35 @@
-@media ( max-width:768px){
-    ul{
-        flex-direction: column ;
-    }
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Raleway:wght@100;500;600;900&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
 }
-li{
-    color: blue;
+h1{
+    font-weight: 500;
+}
+
+.principal-search {
+    height: 100vh;
+}
+.container-header{
+    background-color: #ffffffe6;
+    height: 500px;
+}
+
+.botones{
+    background-color:#344D67!important;
+}
+.botones:hover, .boton:hover, .btn-active{
+    background-color: #6ECCAF !important;
+    color: #344D67!important;
+    width: fit-content;
+    
+}
+.bg-blue{
+    background-color:#344d67;
+    /*position: fixed;*/
+    top: 0%;
+}
+a{
+    color: #6ECCAF !important;
 }
 

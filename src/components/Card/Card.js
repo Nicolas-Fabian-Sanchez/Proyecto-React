@@ -13,12 +13,12 @@ export default function Card({info}) {
     }
 
     return(
-        <div className="bg-primary my-5 d-flex ">
-            <div>
+        <div className="card m-2 p-2 d-flex flex-row justify-content-between align-items-center">
+            <div className='d-flex flex-column justify-content-between align-items-center'>
                 <img src={info.image} alt={info.name}/>
                 <h2 >{info.name}</h2>
 
-                <button onClick={mostrar} className={ ocultar === true ?"bg-success":"d-none"}>Now More..</button>  
+                <button onClick={mostrar} className={ ocultar === true ?"btn btn-active align-self-end more":"d-none"} >Now More..</button>  
 
                 {/* puedo o utilizar 
             ocultar? <button onClick={mostrar}>Now More..</button>  :''*/}          
@@ -32,7 +32,7 @@ export default function Card({info}) {
                         <li className="list-group-item">Origin {info.origin.name}</li>
                         <li className="list-group-item">Gender {info.gender}</li>
                     </ul>
-                </div>:''
+                </div>:""
             }
         </div>
     )
