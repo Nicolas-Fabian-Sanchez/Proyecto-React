@@ -24,8 +24,8 @@ export default function Card({info}) {
             ocultar? <button onClick={mostrar}>Now More..</button>  :''*/}          
             </div>
             {ocultar ==false?
-                <div>
-                    <button className="botones" onClick={ocularInfo}>X</button>
+                <div className= "p-5 flex-column align-items-center ch1 d-flex">
+                    <button className="btn btn-active d-flex align-self-end m-2" onClick={ocularInfo}>X</button>
                     <ul className="list-group">
                         <li className="list-group-item">Character Status {info.status}</li>
                         <li className="list-group-item">Species {info.species}</li>
