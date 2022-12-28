@@ -48,10 +48,7 @@ h1{
 a{
     color: #6ECCAF !important;
 }*/
-.cards-section{
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-}
+
 .card{
     width: fit-content !important;
     background-color: #223142!important;
