@@ -1,7 +1,4 @@
 import Card from "../Card/Card";
-import './SectionCards.css'
-
-
 
 
 export default function SectionCards({datos}) {
